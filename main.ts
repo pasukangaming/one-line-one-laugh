@@ -1,6 +1,9 @@
 // One Line, One Laugh — make.fun entry.
 // A deterministic program: writes a single funny line (<=140 chars)
 // to /output/entry.txt and exits 0. No network, no randomness.
+// Output contract: the file contains exactly the LINE below, with no
+// trailing newline and no extra whitespace, so the grader can compare
+// the entry byte-for-byte.
 import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname } from "node:path";
 
